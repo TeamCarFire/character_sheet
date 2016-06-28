@@ -3,10 +3,10 @@
 
   angular
     .module('characterSheet')
-    .controller('MainController', MainController);
+    .controller('PageController', PageController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function PageController($timeout, webDevTec, toastr) {
     var vm = this;
 
     vm.awesomeThings = [];
