@@ -1,6 +1,10 @@
 {
   "name": "characterSheet",
   "version": "0.0.0",
+  "engines": {
+    "node": "6.2.1",
+    "npm": "3.9.3"
+  },
   "dependencies": {},
   "scripts": {
     "test": "gulp test",
