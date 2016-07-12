@@ -1,25 +1,122 @@
-<div class="md-inline-form">
-  <md-content layout-gt-md="row" layout-padding>
-    <div>
-      <form name="userForm">
-        <div layout-gt-sm="row">
-          <md-input-container class="md-block" flex-gt-sm>
-            <label>Character Name</label>
-            <input ng-model="user.character.fullName">
-          </md-input-container>
+<div class="header">Main header</div>
+<div class="body">
+  <div class="sidebar">Sidebar</div>
+  <div class="main">
+    <div class="content">
+      <div class="box">
+        <div layout="row" layout-sm="column" layout-align="space-around">
+          <md-content class="md-padding">
+          <md-progress-circular md-mode="determinate" value="100" md-diameter="100px" title="1"></md-progress-circular>
+          </md-content>
         </div>
-      </form>
+
+
+        <md-progress-linear md-mode="determinate" value="100"></md-progress-linear>
+        <hr/>
+        <md-progress-linear md-mode="determinate" value="300"></md-progress-linear>
+
+
+        <md-content class="md-padding autocomplete" layout="column">
+          <md-chip-template>
+            <md-chip class="level-chip"><strong>1</strong></md-chip>
+          </md-chip-template>
+        </md-content>
+        <md-content class="md-padding">
+          <form name="characterForm">
+            <div layout layout-sm="column">
+              <md-input-container flex>
+                <label>Player First Name</label>
+                <input ng-model="user.characterFirstName">
+              </md-input-container>
+              <md-input-container flex>
+                <label>Player Last Name</label>
+                <input ng-model="user.characterLastName">
+              </md-input-container>
+            </div>
+            <div layout layout-sm="column">
+              <md-input-container flex>
+                <label>Character First Name</label>
+                <input ng-model="user.characterFirstName">
+              </md-input-container>
+              <md-input-container flex>
+                <label>Character Last Name</label>
+                <input ng-model="user.characterLastName">
+              </md-input-container>
+            </div>
+            <div layout layout-sm="column">
+              <md-input-container flex>
+                <label>Race</label>
+                <input ng-model="user.race">
+              </md-input-container>
+              <md-input-container flex>
+                <label>Sub-Race</label>
+                <input ng-model="user.subRace">
+              </md-input-container>
+              <md-input-container flex>
+                <label>Race Ability</label>
+                <input ng-model="user.raceAbility">
+              </md-input-container>
+            </div>
+            <div layout layout-sm="column">
+              <md-input-container flex>
+                <label>Background</label>
+                <input ng-model="user.background">
+              </md-input-container>
+              <md-input-container flex>
+                <label>Alignment</label>
+                <input ng-model="user.alignment">
+              </md-input-container>
+            </div>
+            <!--<md-input-container flex>-->
+
+            <!--&lt;!&ndash;<label>Race</label>&ndash;&gt;-->
+            <!--&lt;!&ndash;<input ng-model="user.race">&ndash;&gt;-->
+            <!--</md-input-container>-->
+            <div layout layout-sm="column">
+              <md-input-container flex>
+                <label>Biography</label>
+                <textarea ng-model="user.biography" columns="1" md-maxlength="500"></textarea>
+              </md-input-container>
+            </div>
+          </form>
+        </md-content>
+        <!--<div class="md-actions" layout="row"><span flex></span>-->
+        <!--<md-button ng-click=""> Cancel</md-button>-->
+        <!--<md-button ng-click="" class="md-primary"> Save</md-button>-->
+        <!--</div>-->
+
+
+        <!--<div>-->
+        <!--<md-content layout-gt-md="row" layout-padding>-->
+        <!--<div>-->
+        <!--<form name="userForm">-->
+        <!--<div layout-gt-sm="row">-->
+        <!--<md-input-container class="md-block" flex-gt-sm>-->
+        <!--<label>Character Name</label>-->
+        <!--<input ng-model="user.character.fullName">-->
+        <!--</md-input-container>-->
+        <!--</div>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--</md-content>-->
+        <!--</div>-->
+        <!--<div layout-gt-sm="row">-->
+        <!--<md-input-container class="md-block" flex-gt-sm>-->
+        <!--<label>First Name</label>-->
+        <!--<input ng-model="user.character.firstName">-->
+        <!--</md-input-container>-->
+        <!--<md-input-container class="md-block" flex-gt-sm>-->
+        <!--<label>Last Name</label>-->
+        <!--<input ng-model="user.character.lastName">-->
+        <!--</md-input-container>-->
+        <!--</div>-->
+
+
+      </div>
     </div>
-  </md-content>
-</div>
-  <div layout-gt-sm="row">
-    <md-input-container class="md-block" flex-gt-sm>
-      <label>First Name</label>
-      <input ng-model="user.character.firstName">
-    </md-input-container>
-    <md-input-container class="md-block" flex-gt-sm>
-      <label>Last Name</label>
-      <input ng-model="user.character.lastName">
-    </md-input-container>
   </div>
+</div>
+
+
+
 
