@@ -9,9 +9,10 @@
   function MainController() {
     var vm = this;
     vm.currentLevel = 1;
-    vm.nextLevelExperience = nextLevelExperience(vm.currentLevel);
+    vm.nextLevel = vm.currentLevel + 1;
+    vm.nextLevelExperience = nextLevelExperience(vm.nextLevel);
     vm.currentExperience = 80;
-    vm.experienceTilNextLevel = vm.currentExperience / 3;
+    vm.experienceTilNextLevel = (vm.currentExperience / vm.nextLevelExperience * 100).toFixed(2);
 
 //    I like this progress directive https://github.com/angular-directives/angular-round-progress-directive
 
@@ -38,8 +39,7 @@
  355,000 20 +6
 */
 
-    function nextLevelExperience(currentLevel) {
-      var nextLevel = currentLevel + 1;
+    function nextLevelExperience(nextLevel) {
       switch (nextLevel) {
         case 1:
           return 0;
